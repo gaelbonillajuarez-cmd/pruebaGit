@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de JavaScript - Videojuegos</title>
+</head>
+<body>
+
+    <h1>Práctica de Arreglos y Funciones: Videojuegos</h1>
+    <p>Abre la consola (F12) para ver los resultados de las funciones.</p>
+
+    <script>
+        // 1. Crear un arreglo de videojuegos inicializado con 3 elementos
+        let videojuegos = ["Minecraft", "The Legend of Zelda", "Valorant"];
+
+        // 2. Función para contar e imprimir la cantidad de videojuegos
+        function contarJuegos() {
+            console.log("Cantidad de videojuegos en la lista:", videojuegos.length);
+        }
+
+        // 3. Función para mostrar el arreglo completo en la consola
+        function mostrarJuegos() {
+            console.log("Lista de videojuegos actual:", videojuegos);
+        }
+
+        // 4. Función para agregar un videojuego y mostrar el mensaje solicitado
+        function agregarJuego(param) {
+            videojuegos.push(param);
+            console.log(`juego ${param} agregado`);
+        }
+
+        // 5. Función para saludar de forma personalizada
+        function saludar(param) {
+            console.log(`¡Hola ${param}, bienvenido a git!`);
+        }
+
+        // --- Ejemplo de uso y pruebas en la consola ---
+        
+        console.log("--- Estado inicial ---");
+        contarJuegos();
+        mostrarJuegos();
+
+        console.log("\n--- Agregando nuevo videojuego ---");
+        agregarJuego("Cyberpunk 2077");
+        contarJuegos();
+        mostrarJuegos();
+
+        console.log("\n--- Saludo ---");
+        saludar("Gael");
+    </script>
+
+</body>
+</html>
