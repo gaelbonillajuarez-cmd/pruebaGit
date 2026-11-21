@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de edad</title>
+</head>
+<body>
+
+    <h2>Calculadora de edad</h2>
+
+    <label>Ingresa tu año de nacimiento:</label>
+    <input type="number" id="anio">
+
+    <button onclick="calcularEdad()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularEdad() {
+            let anio = document.getElementById("anio").value;
+            let edad = 2026 - anio;
+
+            document.getElementById("resultado").innerHTML =
+                "Tu edad aproximada es: " + edad + " años";
+        }
+    </script>
+
+</body>
+</html>
